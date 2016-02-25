@@ -1,5 +1,29 @@
 [
   {
-  "name": "Stephan"
+    "firstname": "Stephan",
+    "lastname": "Muller",
+    "age": 30,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "yes",
+    "location": "Apeldoorn"
+  },
+  {
+    "firstname": "Arnoud",
+    "lastname": "Muller",
+    "age": 35,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "yes",
+    "location": "Apeldoorn"
+  },
+  {
+    "firstname": "Danh",
+    "lastname": "Nguyen",
+    "age": 27,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "no",
+    "location": "Apeldoorn"
   }
 ]
