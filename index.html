@@ -6,14 +6,30 @@
     </head>
     <body ui-view ng-cloak ng-controller="mainController">
 
+        <nav>
+            <!-- todo: turn into links and remember state -->
+            <button ng-click="case1()">Case 1</button>
+            <button ng-click="case2()">Case 2</button>
+            <button ng-click="case3()">Case 3</button>
+        </nav>
+
         <h1>Wie werken er bij Luminis:</h1>
+{{case}}
+        <section ng-if="case === 1">
+            <h2>Case 1: Apeldoorn medewerkers</h2>
+            <ul>
+                <li class="employee" ng-repeat="employee in employees">
+                    {{employee.firstname}} {{employee.lastname}} ({{employee.job}}, {{employee.location}})
+                </li>
+            </ul>
+        </section>
 
-        <div class="employee" ng-repeat="employee in mainCtrl.employees">
+        <section ng-if="!employees">Please select a case to start</section>
 
-        </div>
-
-        <h2>Raw data:</h2>
-        <pre ng-bind-html="prettyJson"></pre>
+        <section>
+            <h2>Raw data:</h2>
+            <pre ng-bind-html="prettyJson"></pre>
+        </section>
 
         <script src="dist/app.min.js"></script>
     </body>
