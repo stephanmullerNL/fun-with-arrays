@@ -1,4 +1,6 @@
-
+[ng-cloak] {
+    display: none;
+}
 
 pre {
     outline: 1px solid #ccc;
