@@ -4,7 +4,17 @@
         <title>Luminis Employees</title>
         <link rel="stylesheet" type="text/css" href="dist/style.css" />
     </head>
-    <body ui-view ng-controller="mainController">
+    <body ui-view ng-controller="mainController as mainCtrl">
+
+        <h1>Wie werken er bij Luminis:</h1>
+
+        <div class="employee" ng-repeat="employee in mainCtrl.employees">
+
+        </div>
+
+        <h2>Raw data:</h2>
+        <pre ng-bind-html="prettyJson"></pre>
+
         <script src="dist/app.min.js"></script>
     </body>
 </html>

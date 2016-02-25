@@ -4,5 +4,4 @@ var angular = require('angular'),
 
 angular.module('app', [])
     .controller('mainController', MainController)
-
     .factory('employeeService', EmployeeService);
