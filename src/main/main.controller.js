@@ -3,18 +3,10 @@
     angular.module('app')
         .controller('mainController', MainController);
 
-    MainController.$inject = ['$scope', 'employees'];
+    MainController.$inject = [];
 
-    function MainController($scope, employees) {
+    function MainController() {
 
-
-        $scope.test = employees;
-
-        function init() {
-
-        }
-
-        init();
     }
 
 })();

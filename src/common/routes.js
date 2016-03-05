@@ -13,17 +13,18 @@
             .state('main', {
                 url: '/',
                 templateUrl: 'main/main.html',
-                controller: 'mainController as mainCtrl',
+                controller: 'mainController as mainCtrl'
+
+            })
+            .state('case1', {
+                url: '/case1',
+                templateUrl: 'case1/case1.html',
+                controller: 'case1Controller as case1Ctrl',
                 resolve: {
                     employees: function(employeeService) {
                         return employeeService.get();
                     }
                 }
-            })
-            .state('case1', {
-                url: '/case1',
-                templateUrl: 'case1/case1.html',
-                controller: 'case1Controller as case1Ctrl'
             })
     }
 
