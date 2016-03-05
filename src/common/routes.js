@@ -16,14 +16,14 @@
                 controller: 'mainController as mainCtrl'
 
             })
-            .state('case1', {
-                url: '/case1',
-                templateUrl: 'case1/case1.html',
-                controller: 'case1Controller as case1Ctrl',
+            .state('case3', {
+                url: '/case3',
+                templateUrl: 'case3/case3.html',
+                controller: 'case3Controller as case1Ctrl',
                 resolve: {
-                    employees: function(employeeService) {
+                    employees: ['employeeService', function(employeeService) {
                         return employeeService.get();
-                    }
+                    }]
                 }
             })
     }
