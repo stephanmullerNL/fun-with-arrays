@@ -2,6 +2,11 @@
     display: none;
 }
 
+body {
+    margin: 0 auto;
+    width: 40em;
+}
+
 pre {
     outline: 1px solid #ccc;
     padding: 5px;
