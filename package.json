@@ -4,24 +4,31 @@
   "description": "An array processing method demo",
   "main": "index.html",
   "scripts": {
-    "css": " cp src/style.css dist/style.css",
-    "build": "npm run scripts && npm run css",
+    "css": " cp src/app.css dist/app.css",
+    "build": "npm run scripts && npm run css && npm run html",
+    "html": "npm-html2js -i 'src/**/*.html' -o 'dist/templates.js' -b 'src' -m 'app'",
+    "livereload": "echo 'ok' && live-reload --port 9091 dist/",
     "serve": "npm run watch & http-server ./",
-    "scripts": "browserify src/app.js | uglifyjs > dist/app.min.js",
-    "watch": "npm-watch"
+    "scripts": "uglifyjs src/app.js src/**/*.js > dist/app.min.js -b",
+    "watch": "npm-watch & npm run livereload"
   },
   "watch": {
     "build": {
-      "patterns": ["src"],
-      "extensions": "js,css,html"
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,css,html",
+      "ignore": "dist/*.js"
     }
   },
   "author": "Stephan Muller",
   "license": "MIT",
   "devDependencies": {
     "angular": "^1.5.0",
-    "browserify": "^13.0.0",
+    "angular-ui-router": "^0.2.18",
     "http-server": "^0.9.0",
+    "live-reload": "^1.1.0",
+    "npm-html2js": "^0.1.8",
     "npm-watch": "^0.1.1",
     "uglify-js": "^2.6.2"
   }

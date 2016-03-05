@@ -2,35 +2,28 @@
 <html ng-app="app">
     <head>
         <title>Luminis Employees</title>
-        <link rel="stylesheet" type="text/css" href="dist/style.css" />
+        <link rel="stylesheet" type="text/css" href="dist/app.css" />
     </head>
-    <body ui-view ng-cloak ng-controller="mainController">
+    <body ng-cloak>
 
-        <nav>
-            <!-- todo: turn into links and remember state -->
-            <button ng-click="case1()">Case 1</button>
-            <button ng-click="case2()">Case 2</button>
-            <button ng-click="case3()">Case 3</button>
-        </nav>
+        <a ui-sref="main">home</a>
+        <a ui-sref="case1">case1</a>
 
         <h1>Wie werken er bij Luminis:</h1>
 
-        <section ng-if="case === 1">
-            <h2>Case 1: Apeldoorn medewerkers</h2>
-            <ul>
-                <li class="employee" ng-repeat="employee in employees">
-                    {{employee.firstname}} {{employee.lastname}} ({{employee.job}}, {{employee.location}})
-                </li>
-            </ul>
-        </section>
-
-        <section ng-if="!employees">Please select a case to start</section>
+        <section ui-view></section>
 
         <section>
             <h2>Raw data:</h2>
             <pre ng-bind-html="prettyJson"></pre>
         </section>
 
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
         <script src="dist/app.min.js"></script>
+        <script src="dist/templates.js"></script>
+
+        <script src="//localhost:9091"></script>
     </body>
 </html>
