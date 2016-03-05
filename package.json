@@ -5,11 +5,11 @@
   "main": "index.html",
   "scripts": {
     "css": " cp src/app.css dist/app.css",
-    "build": "npm run scripts && npm run css && npm run html",
-    "html": "npm-html2js -i 'src/**/*.html' -o 'dist/templates.js' -b 'src' -m 'app'",
+    "build": "npm run html && npm run scripts && npm run css",
+    "html": "npm-html2js -i 'src/**/*.html' -o '.tmp/templates.js' -b 'src'",
     "livereload": "echo 'ok' && live-reload --port 9091 dist/",
     "serve": "npm run watch & http-server ./",
-    "scripts": "uglifyjs src/app.js src/**/*.js > dist/app.min.js -b",
+    "scripts": "uglifyjs src/app.js src/**/*.js .tmp/*.js > dist/app.min.js -b",
     "watch": "npm-watch & npm run livereload"
   },
   "watch": {

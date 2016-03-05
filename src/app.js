@@ -1,1 +1,4 @@
-angular.module('app', ['ui.router']);
+angular.module('app', [
+    'ui.router',
+    'app.template'
+]);
