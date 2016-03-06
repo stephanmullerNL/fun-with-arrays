@@ -1,12 +1,57 @@
-<h2>Case 3: Apeldoorn medewerkers</h2>
-<ul>
-    <li class="employee" ng-repeat="employee in employees">
-        {{employee.firstname}} {{employee.lastname}} ({{employee.job}}, {{employee.location}})
-    </li>
+<h2>Case 3: Reducing groceries</h2>
+
+<p>
+    The input data is a list of groceries you just bought from Albert Heijn. Use the <code>reduce</code>
+    method in case3.controller.js to do calculations on the prices.
+
+    The discount (where applicable) is in euros per unit and has already been deducted from
+    the item's price.
+</p>
+
+<hr>
+
+<h3>Total price ($scope.totalPrice)</h3>
+<p>
+    Calculate the total price by multiplying the price per unit with the amount bought.
+</p>
+
+<section class="solution" check-solution="totalPrice" name="totalPrice">
+    Total price: € {{totalPrice}}
+</section>
+
+<hr>
+
+<h3>Total discount ($scope.totalDiscount)</h3>
+<p>
+    Find all the items that have a <code>discount</code> property and use that to calculate
+    the total amount you saved while shopping. You also have a coupon for € 2.50 discount so
+    add that to the calculation as well!
+</p>
+
+<section class="solution" check-solution="totalDiscount" name="totalDiscount">
+    Total discount: € {{totalDiscount | number:2}}
+</section>
+
+
+<hr>
+
+<h3>Every item counts ($scope.allItems)</h3>
+<p>
+    The cashier doesn't care about maths, she just scans item one by one.
+    Turn the grocery list into an array of item names, repeating items you bought more than
+    one of. (Items with a unit of <code>"kg"</code> only count as one item). Example:
+</p>
+
+<pre>[ "AH Tijger wit", "AH Tijger wit", "Appels Jonagold", "Chiquita bananen", ... ]</pre>
+
+<p>
+    Note: the resulting array has more items than the original data, so <code>map</code> won't work.
+    Use <code>reduce</code> to create the new list.
+</p>
+
+<ul class="solution" check-solution="allItems" name="allItems">
+    <li ng-repeat="item in allItems">{{item}}</li>
 </ul>
 
-Total age: {{totalAge}}
+<pretty-json name="groceries" data="rawdata"></pretty-json>
 
-<check-solution name="employees" data="employees"></check-solution>
-
-<pretty-json name="employees" data="employees"></pretty-json>

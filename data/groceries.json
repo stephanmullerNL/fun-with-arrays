@@ -1,0 +1,61 @@
+[
+    {
+        "item": "AH Tijger wit",
+        "unit": "single",
+        "price": 1.59,
+        "amount": 2
+    },
+    {
+        "item": "Appels Jonagold",
+        "unit": "kg",
+        "price": 1,
+        "amount": 1
+    },
+    {
+        "item": "Chiquita bananen",
+        "unit": "kg",
+        "price": 1.5,
+        "amount": 1,
+        "discount": 0.39
+    },
+    {
+        "item": "Ontbijtspek Euroshopper",
+        "unit": "kg",
+        "price": 3.95,
+        "amount": 0.2
+    },
+    {
+        "item": "Whiskas adult droog rund",
+        "unit": "kg",
+        "price": 3.00,
+        "amount": 2,
+        "discount": 0.39
+    },
+    {
+        "item": "AH Broccoli",
+        "unit": "single",
+        "price": 1,
+        "amount": 2,
+        "discount": 0.78
+    },
+    {
+        "item": "Vega burger 2-pack",
+        "unit": "single",
+        "price": 2.15,
+        "amount": 2,
+        "discount": 0.54
+    },
+    {
+        "item": "AH Kipfilet",
+        "unit": "kg",
+        "price": 8,
+        "amount": 0.325
+    },
+    {
+        "item": "Heinz sandwich spread",
+        "unit": "single",
+        "price": 1.74,
+        "amount": 1
+    }
+
+]

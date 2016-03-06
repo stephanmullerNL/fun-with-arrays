@@ -14,6 +14,8 @@
             chronological: 369639269,
             favorites: 307386920,
             badMovies: 308216905,
+            totalPrice: 305420627,
+            totalDiscount: 305428209
         };
 
         console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);

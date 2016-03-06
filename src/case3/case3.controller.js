@@ -3,21 +3,15 @@
     angular.module('app')
         .controller('case3Controller', Case3Controller);
 
-    Case3Controller.$inject = ['$scope', 'employees'];
+    Case3Controller.$inject = ['$scope', 'groceries'];
 
-    function Case3Controller($scope, employees) {
-
-        var apeldoornEmployees = employees,
-            totalAge;
-
-        // do your magic here
+    function Case3Controller($scope, groceries) {
+        $scope.rawdata = groceries;
 
 
+        $scope.totalPrice = 0;
 
-
-        // output the results
-        $scope.employees = apeldoornEmployees;
-        $scope.totalAge = totalAge;
+        $scope.totalDiscount = 0;
 
     }
 

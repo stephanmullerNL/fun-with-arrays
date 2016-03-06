@@ -41,6 +41,16 @@
                 templateUrl: 'case3/case3.html',
                 controller: 'case3Controller',
                 resolve: {
+                    groceries: ['dataService', function(dataService) {
+                        return dataService.get('groceries');
+                    }]
+                }
+            })
+            .state('case4', {
+                url: '/case4',
+                templateUrl: 'case4/case4.html',
+                controller: 'case4Controller',
+                resolve: {
                     employees: ['dataService', function(dataService) {
                         return dataService.get('employees');
                     }]
