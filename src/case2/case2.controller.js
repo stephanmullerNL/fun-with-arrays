@@ -14,7 +14,7 @@
 
         $scope.favorites = movies;
 
-        $scope.bad = movies;
+        $scope.badMovies = movies;
     }
 
 

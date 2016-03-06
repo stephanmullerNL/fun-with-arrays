@@ -2,7 +2,8 @@
 
 <p>
     The incoming data is a list of movies as an array of objects (see the raw data).
-    Use <code>filter</code> and <code>sort</code> to output them in the following ways:
+    Use <code>filter</code> and <code>sort</code> in case2.controller.js to output
+    them in the following ways:
 </p>
 <p>
     NOTE: <code>sort</code> alters the original array. Always make a copy of the original array
@@ -51,19 +52,19 @@
 
 <hr>
 
-<h3>Bad movies ($scope.bad)</h3>
+<h3>Bad movies ($scope.badMovies)</h3>
 
 <p>
     List all movies from an even year with a score below 6, sorted alphabetically
 </p>
 
-<table class="solution" check-solution="bad" name="bad">
+<table class="solution" check-solution="badMovies" name="badMovies">
     <tr>
         <th>Title</th>
         <th>Year</th>
         <th>Rating</th>
     </tr>
-    <tr ng-repeat="movie in bad">
+    <tr ng-repeat="movie in badMovies">
         <td>{{movie.title}}</td>
         <td>{{movie.year}}</td>
         <td>{{movie.rating}}</td>

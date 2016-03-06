@@ -13,7 +13,7 @@
             colorLengths: 308465390,
             chronological: 369639269,
             favorites: 307386920,
-            bad: 308216905
+            badMovies: 308216905,
         };
 
         console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
