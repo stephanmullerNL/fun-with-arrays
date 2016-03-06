@@ -1,0 +1,75 @@
+<h2>Case 2: Filtering and sorting movies</h2>
+
+<p>
+    The incoming data is a list of movies as an array of objects (see the raw data).
+    Use <code>filter</code> and <code>sort</code> to output them in the following ways:
+</p>
+<p>
+    NOTE: <code>sort</code> alters the original array. Always make a copy of the original array
+    using <code>movies.slice(0)</code> before sorting, otherwise you'll get unexpected results.
+</p>
+
+<hr>
+
+<h3>Chronological order ($scope.chronological)</h3>
+<p>Sort the movies by year (oldest first)</p>
+
+<table class="solution" check-solution="chronological" name="chronological">
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+    </tr>
+    <tr ng-repeat="movie in chronological">
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.rating}}</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Favorites ($scope.favorites)</h3>
+<p>
+    Filter the list so only movies with a rating of 8 or higher appear. Sort them by
+    rating (descending).
+</p>
+
+
+<table class="solution" check-solution="favorites" name="favorites">
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+    </tr>
+    <tr ng-repeat="movie in favorites">
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.rating}}</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Bad movies ($scope.bad)</h3>
+
+<p>
+    List all movies from an even year with a score below 6, sorted alphabetically
+</p>
+
+<table class="solution" check-solution="bad" name="bad">
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+    </tr>
+    <tr ng-repeat="movie in bad">
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.rating}}</td>
+    </tr>
+</table>
+
+<hr>
+
+<pretty-json name="movies" data="rawdata"></pretty-json>

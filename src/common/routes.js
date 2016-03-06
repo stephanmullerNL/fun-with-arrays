@@ -22,8 +22,17 @@
                 controller: 'case1Controller',
                 resolve: {
                     colors: ['dataService', function(dataService) {
-                        console.log('resolving colors');
                         return dataService.get('colors');
+                    }]
+                }
+            })
+            .state('case2', {
+                url: '/case2',
+                templateUrl: 'case2/case2.html',
+                controller: 'case2Controller',
+                resolve: {
+                    movies: ['dataService', function(dataService) {
+                        return dataService.get('movies');
                     }]
                 }
             })

@@ -27,6 +27,19 @@ hr {
     list-style-position: inside;
 }
 
+.solution th {
+    text-align: left;
+}
+
+.solution th,
+.solution td {
+    padding: 0 1em;
+}
+
+.solution td:nth-child(3) {
+    text-align: center;
+}
+
 pre {
     outline: 1px solid #ccc;
     padding: 5px;

@@ -10,7 +10,10 @@
         var checksums = {
             colorsUppercase: 305671123,
             colorsDouble: 306454031,
-            colorLengths: 308465390
+            colorLengths: 308465390,
+            chronological: 369639269,
+            favorites: 307386920,
+            bad: 308216905
         };
 
         console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
