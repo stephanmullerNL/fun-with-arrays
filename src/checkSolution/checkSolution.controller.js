@@ -9,6 +9,7 @@
     function CheckSolutionController($scope, $element) {
         var checksums = {
             colorsUppercase: 305671123,
+            colorsDouble: 306454031,
             colorLengths: 306101416
         };
 
