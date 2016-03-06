@@ -6,10 +6,9 @@
 
     function CheckSolutionDirective() {
         return {
-            restrict: 'E',
-            templateUrl: 'checkSolution/checkSolution.html',
+            restrict: 'A',
             scope: {
-                data: '=',
+                data: '=checkSolution',
                 name: '@'
             },
             controller: 'checkSolutionController',
