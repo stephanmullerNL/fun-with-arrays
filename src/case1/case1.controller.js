@@ -19,12 +19,11 @@
         $scope.colorsDouble = colors;
 
 
-        // Modify this to turn each color name into an object, where the key
-        // is the color name and the value is the length of the name
+        // Modify this to turn each color name into an object with the properties
+        // "name" and "length"
         $scope.colorLengths = colors;
-
-
     }
+
 
     function doubleString(str) {
         return str + str;

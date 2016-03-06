@@ -10,7 +10,7 @@
         var checksums = {
             colorsUppercase: 305671123,
             colorsDouble: 306454031,
-            colorLengths: 306101416
+            colorLengths: 308465390
         };
 
         console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
