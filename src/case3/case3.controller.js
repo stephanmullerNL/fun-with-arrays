@@ -11,8 +11,10 @@
 
         $scope.totalPrice = 0;
 
-        $scope.totalDiscount = 0;
+        $scope.totalDiscount = 0
 
+
+        $scope.allItems = [];
     }
 
 })();

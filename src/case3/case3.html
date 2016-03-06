@@ -50,7 +50,7 @@
 </p>
 
 <ul class="solution" check-solution="allItems" name="allItems">
-    <li ng-repeat="item in allItems">{{item}}</li>
+    <li ng-repeat="item in allItems track by $index">{{item}}</li>
 </ul>
 
 <pretty-json name="groceries" data="rawdata"></pretty-json>
