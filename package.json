@@ -11,7 +11,7 @@
     "livereload": "live-reload --port 9091 dist/",
     "serve": "npm run watch & http-server ./ -s",
     "prescripts": "npm run lint",
-    "scripts": "browserify src/app.js src/**/*.js .tmp/*.js | uglifyjs > dist/app.min.js",
+    "scripts": "uglifyjs src/app.js src/**/*.js .tmp/*.js > dist/app.min.js",
     "watch": "npm-watch & npm run livereload"
   },
   "watch": {
@@ -28,7 +28,6 @@
   "devDependencies": {
     "angular": "^1.5.0",
     "angular-ui-router": "^0.2.18",
-    "browserify": "^13.0.0",
     "eslint": "^2.3.0",
     "http-server": "^0.9.0",
     "live-reload": "^1.1.0",

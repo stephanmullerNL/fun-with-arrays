@@ -9,8 +9,6 @@
 
     function Case4Controller($scope, employees) {
 
-        var _ = require('lodash');
-
         $scope.employees = employees;
 
         $scope.apeldoornFE = employees;
