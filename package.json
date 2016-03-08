@@ -5,13 +5,13 @@
   "main": "index.html",
   "scripts": {
     "css": " cp src/app.css dist/app.css",
-    "build": "npm run html && npm run scripts && npm run css",
+    "build": "npm run html && npm run css && npm run scripts",
     "html": "npm-html2js -i 'src/**/*.html' -o '.tmp/templates.js' -b 'src'",
     "lint": "eslint src/**/*.js",
-    "livereload": "echo 'ok' && live-reload --port 9091 dist/",
-    "serve": "npm run watch & http-server ./",
+    "livereload": "live-reload --port 9091 dist/",
+    "serve": "npm run watch & http-server ./ -s",
     "prescripts": "npm run lint",
-    "scripts": "browserify src/app.js src/**/*.js .tmp/*.js | uglifyjs > dist/app.min.js -b",
+    "scripts": "browserify src/app.js src/**/*.js .tmp/*.js | uglifyjs > dist/app.min.js",
     "watch": "npm-watch & npm run livereload"
   },
   "watch": {
@@ -20,7 +20,7 @@
         "src"
       ],
       "extensions": "js,css,html",
-      "ignore": "dist/*.js"
+      "ignore": ["dist/*.js", ".tmp/*.*"]
     }
   },
   "author": "Stephan Muller",
