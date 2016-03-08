@@ -18,7 +18,9 @@
             badMovies: 308216905,
             totalPrice: 305420647,
             totalDiscount: 305427291,
-            allItems: 308625360
+            allItems: 308625360,
+            apeldoornFE: 319309724,
+            totalAge: 305420216
         };
         
         if(checksum($scope.data) === checksums[$scope.name]) {

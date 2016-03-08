@@ -9,16 +9,13 @@
 
     function Case4Controller($scope, employees) {
 
-        var _ = require('lodash'),
-            apeldoornEmployees = employees,
-            totalAge;
+        var _ = require('lodash');
 
-        // do your magic here
+        $scope.employees = employees;
 
+        $scope.apeldoornFE = employees;
 
-        // output the results
-        $scope.employees = apeldoornEmployees;
-        $scope.totalAge = totalAge;
+        $scope.totalAge = 0;
 
     }
 

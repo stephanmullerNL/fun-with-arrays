@@ -5,9 +5,9 @@
     angular.module('app')
         .factory('dataService', DataService);
 
-    DataService.$inject = ['$http', '$window'];
+    DataService.$inject = ['$http'];
 
-    function DataService ($http, $window) {
+    function DataService ($http) {
 
         'use strict';
 

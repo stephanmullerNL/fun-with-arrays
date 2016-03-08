@@ -50,6 +50,20 @@ hr {
     text-align: center;
 }
 
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 pre {
     outline: 1px solid #ccc;
     padding: 5px;

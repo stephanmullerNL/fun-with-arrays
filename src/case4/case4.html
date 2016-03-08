@@ -1,11 +1,44 @@
-<h2>Case 3: Apeldoorn medewerkers</h2>
-<ul>
-    <li class="employee" ng-repeat="employee in employees">
-        {{employee.firstname}} {{employee.lastname}} ({{employee.job}}, {{employee.location}})
+<h2>Case 3: Combining methods</h2>
+
+<p>
+    The incoming data is an array of some Luminis epmployees (with fictional ages,
+    don't take offense please). Use the methods from the previous cases to return the following
+    data:
+</p>
+
+<p>
+    NOTE: Changing an object's property when mapping also changes the original array. Always
+    copy an object before modifying it!
+</p>
+
+<hr>
+
+<h3>Apeldoorn Front-end Developers ($scope.apeldoornFE)</h3>
+
+<p>
+    Return all front-end developers from Apeldoorn, ordered by age (ascending). I've forgotten
+    how to use numbered lists in HTML, so also add a property <code>order</code> to each employee,
+    which contains the index (1-based) after sorting. Also convert the <code>smoker</code>
+    property to a boolean so the checkbox works correctly.
+</p>
+
+<ul class="solution" check-solution="apeldoornFE" name="apeldoornFE" style="list-style-type: none">
+    <li class="clearfix" ng-repeat="employee in apeldoornFE">
+        {{employee.order || '?'}}:  {{employee.firstname}} {{employee.lastname}} ({{employee.job}}, {{employee.location}})
+        <span class="right">Smoker: <input type="checkbox" ng-model="employee.smoker" /></span>
     </li>
 </ul>
 
-Total age: {{totalAge}}
+<hr>
+
+<h3>Combined age of all men ($scope.cobinedAge)</h3>
+
+<p>
+    Return the combined age of all men. Add 2 years per smoker because it makes them look older,
+    but subtract 5 from the total because Danh looks so young.
+</p>
+
+<div class="solution" check-solution="totalAge" name="totalAge">Total age: {{totalAge}}</div>
 
 <check-solution name="employees" data="employees"></check-solution>
 

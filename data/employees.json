@@ -9,13 +9,67 @@
     "location": "Apeldoorn"
   },
   {
+    "firstname": "Niels",
+    "lastname": "Wissels",
+    "age": 42,
+    "job": "Designer",
+    "gender": "male",
+    "smoker": "no",
+    "location": "Arnhem"
+  },
+  {
     "firstname": "Arnoud",
-    "lastname": "Muller",
+    "lastname": "Huberts",
     "age": 35,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "no",
+    "location": "Apeldoorn"
+  },
+  {
+    "firstname": "Ine",
+    "lastname": "van der Kuur",
+    "age": 55,
+    "job": "Office Manager",
+    "gender": "female",
+    "smoker": "no",
+    "location": "Arnhem"
+  },
+  {
+    "firstname": "Pascal",
+    "lastname": "Vos",
+    "age": 29,
     "job": "Front-end Developer",
     "gender": "male",
     "smoker": "yes",
     "location": "Apeldoorn"
+  },
+  {
+    "firstname": "Lars",
+    "lastname": "Hollenboom",
+    "age": 32,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "no",
+    "location": "Arnhem"
+  },
+  {
+    "firstname": "GP",
+    "lastname": "Gooiker",
+    "age": 33,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "no",
+    "location": "Rotterdam"
+  },
+  {
+    "firstname": "Linda",
+    "lastname": "Stuurman",
+    "age": 33,
+    "job": "Front-end Developer",
+    "gender": "female",
+    "smoker": "no",
+    "location": "Rotterdam"
   },
   {
     "firstname": "Danh",
@@ -25,5 +79,14 @@
     "gender": "male",
     "smoker": "no",
     "location": "Apeldoorn"
+  },
+  {
+    "firstname": "Mart",
+    "lastname": "van Koolwijk",
+    "age": 27,
+    "job": "Front-end Developer",
+    "gender": "male",
+    "smoker": "yes",
+    "location": "Arnhem"
   }
 ]
