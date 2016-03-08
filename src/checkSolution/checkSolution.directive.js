@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     angular
         .module('app')
         .directive('checkSolution', CheckSolutionDirective);
@@ -13,7 +15,7 @@
             },
             controller: 'checkSolutionController',
             controllerAs: 'checkSolution'
-        }
+        };
     }
 
 })();

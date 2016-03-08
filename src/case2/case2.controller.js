@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     angular.module('app')
         .controller('case2Controller', Case2Controller);
 

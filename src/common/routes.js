@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     angular
         .module('app')
         .config(routes);
@@ -12,9 +14,7 @@
         $stateProvider
             .state('main', {
                 url: '/',
-                templateUrl: 'main/main.html',
-                controller: 'mainController'
-
+                templateUrl: 'main/main.html'
             })
             .state('case1', {
                 url: '/case1',
@@ -55,7 +55,7 @@
                         return dataService.get('employees');
                     }]
                 }
-            })
+            });
     }
 
 })();

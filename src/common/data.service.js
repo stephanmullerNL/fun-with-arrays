@@ -1,11 +1,13 @@
 (function() {
 
+    'use strict';
+
     angular.module('app')
         .factory('dataService', DataService);
 
-    DataService.$inject = ['$http'];
+    DataService.$inject = ['$http', '$window'];
 
-    function DataService ($http) {
+    function DataService ($http, $window) {
 
         'use strict';
 
@@ -14,12 +16,12 @@
         };
 
         function getData(name) {
-            return $http.get('./data/' + name + '.json')
+            return $http.get('./datas/' + name + '.json')
                 .then(function(response) {
                     return response.data;
                 })
                 .catch(function(error) {
-                    console.log('Something went wrong!', error);
+                    throw new Error('Unable to fetch data: ' + error.statusText);
                 });
         }
     }

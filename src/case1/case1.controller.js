@@ -1,11 +1,14 @@
 (function() {
 
+    'use strict';
+
     angular.module('app')
         .controller('case1Controller', Case1Controller);
 
     Case1Controller.$inject = ['$scope', 'colors'];
 
     function Case1Controller($scope, colors) {
+
         // Output the raw data to help you debug :)
         $scope.rawdata = colors;
 

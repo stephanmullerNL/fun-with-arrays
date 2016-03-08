@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     angular
         .module('app')
         .directive('prettyJson', PrettyJsonDirective);
@@ -14,7 +16,7 @@
             },
             controller: 'prettyJsonController',
             controllerAs: 'prettyJson'
-        }
+        };
     }
 
 })();

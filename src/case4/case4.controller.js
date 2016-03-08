@@ -1,5 +1,7 @@
 (function() {
 
+    'use strict';
+
     angular.module('app')
         .controller('case4Controller', Case4Controller);
 
@@ -7,12 +9,11 @@
 
     function Case4Controller($scope, employees) {
 
-        var apeldoornEmployees = employees,
+        var _ = require('lodash'),
+            apeldoornEmployees = employees,
             totalAge;
 
         // do your magic here
-
-
 
 
         // output the results
