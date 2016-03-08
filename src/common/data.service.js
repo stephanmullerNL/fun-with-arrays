@@ -16,7 +16,7 @@
         };
 
         function getData(name) {
-            return $http.get('./datas/' + name + '.json')
+            return $http.get('./data/' + name + '.json')
                 .then(function(response) {
                     return response.data;
                 })

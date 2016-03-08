@@ -20,9 +20,7 @@
             totalDiscount: 305427291,
             allItems: 308625360
         };
-
-        console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
-
+        
         if(checksum($scope.data) === checksums[$scope.name]) {
             $element.addClass('solved');
         }
