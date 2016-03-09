@@ -6,3 +6,11 @@ transformed using methods like `map`, `reduce` and `filter`.
 - Checkout this repository
 - run `npm install` to install the dependencies
 - run `npm run serve` to build and serve the project to http://localhost:8080
+
+**Resources**
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+for more interesting methods:
+
+https://lodash.com/docs
