@@ -17,12 +17,14 @@
             favorites: 307386920,
             badMovies: 308216905,
             totalPrice: 305420647,
-            totalDiscount: 305427291,
+            totalDiscount: 305427280,
             allItems: 308625360,
             apeldoornFE: 319309724,
             totalAge: 305420216
         };
-        
+
+        console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
+
         if(checksum($scope.data) === checksums[$scope.name]) {
             $element.addClass('solved');
         }

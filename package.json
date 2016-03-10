@@ -6,7 +6,7 @@
   "scripts": {
     "css": " cp src/app.css dist/app.css",
     "build": "npm run html && npm run css && npm run scripts",
-    "html": "mkdir .tmp -p && npm-html2js -i 'src/**/*.html' -o '.tmp/templates.js' -b 'src'",
+    "html": "mkdir -p .tmp && npm-html2js -i 'src/**/*.html' -o '.tmp/templates.js' -b 'src'",
     "lint": "eslint src/**/*.js",
     "livereload": "live-reload --port 9091 dist/",
     "serve": "npm run watch & http-server ./ -s",
