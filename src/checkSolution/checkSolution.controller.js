@@ -20,7 +20,7 @@
             totalDiscount: 305427280,
             allItems: 308625360,
             apeldoornFE: 319309724,
-            totalAge: 305420216
+            totalAge: 305420214
         };
 
         console.log($scope.data, $scope.name, checksum($scope.data), checksums[$scope.name]);
